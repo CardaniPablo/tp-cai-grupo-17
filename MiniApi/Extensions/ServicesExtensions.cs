@@ -9,6 +9,8 @@ namespace MiniApi.Extensions
         {
             services.AddSingleton<DatabaseInitializer>();
             services.AddScoped<ItemRepository>();
+            services.AddScoped<ProductoRepository>();
+            services.AddScoped<UserRepository>();
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
 

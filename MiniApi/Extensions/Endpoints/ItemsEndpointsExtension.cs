@@ -1,9 +1,12 @@
-﻿using MiniApi.Data;
+﻿using Microsoft.AspNetCore.Mvc;
+using MiniApi.Data;
 using MiniApi.Models;
 
 namespace MiniApi.Extensions.Endpoints
+
 {
     // ALUMNOS: clase donde se definen los endpoints para cada entidad
+
     public static class ItemsEndpointsExtension
     {
         public static void MapItemEndpoints(this WebApplication app)

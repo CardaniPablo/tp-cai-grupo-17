@@ -35,7 +35,30 @@ namespace MiniApi.Data
             );
         """);
 
+            connection.Execute("""
+            CREATE TABLE IF NOT EXISTS Productos (
+                id          INTEGER PRIMARY KEY AUTOINCREMENT,
+                Nombre        TEXT    NOT NULL,
+                Descripcion TEXT,
+                Precio       REAL    NOT NULL DEFAULT 0,
+                Stock       INTEGER NOT NULL DEFAULT 0,
+                Categoria    TEXT    NOT NULL,
+                created_at  TEXT    NOT NULL DEFAULT (datetime('now')),
+                updated_at  TEXT
+            );
+        """);
 
+            connection.Execute("""
+            CREATE TABLE IF NOT EXISTS users (
+                id          INTEGER PRIMARY KEY AUTOINCREMENT,
+                Nombre        TEXT    NOT NULL,
+                Apellido TEXT NOT NULL,
+                Email      TEXT    NOT NULL ,
+                PasswordHash       TEXT    NOT NULL,
+                created_at  TEXT    NOT NULL DEFAULT (datetime('now')),
+                IntentosFallidos INTEGRER DEFAULT 0
+            );
+        """);
 
             _logger.LogInformation("SQLite inicializado correctamente → {db}", connectionString);
         }
