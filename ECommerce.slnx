@@ -2,7 +2,7 @@
   <Folder Name="/Src/">
     <Project Path="Src/Cart.API/Cart.Api.csproj" />
     <Project Path="Src/Notificaciones/Notificaciones.Api.csproj" />
-    <Project Path="Src/Orders/Orders.csproj" />
+    <Project Path="Src/Orders/Orders.Api.csproj" />
     <Project Path="Src/Productos.Api/Productos.Api.csproj" />
     <Project Path="Src/Users.API/Users.Api.csproj" />
   </Folder>
