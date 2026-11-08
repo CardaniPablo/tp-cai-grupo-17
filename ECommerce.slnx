@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Src/">
+    <File Path=".gitignore" />
+    <Project Path="Src/Cart.Api/Cart.Api.csproj" />
+    <Project Path="Src/Notifications.API/Notificaciones.Api.csproj" />
+    <Project Path="Src/Orders.API/Orders.Api.csproj" />
+    <Project Path="Src/Products.API/Productos.Api.csproj" />
+    <Project Path="Src/Users.Api/Users.Api.csproj" />
+  </Folder>
+</Solution>
