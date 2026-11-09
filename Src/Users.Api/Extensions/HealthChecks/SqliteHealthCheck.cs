@@ -2,7 +2,7 @@
 using Microsoft.Data.Sqlite;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
-namespace Productos.Api.Extensions.HealthChecks
+namespace Users.Api.Extensions.HealthChecks
 {
     public class SqliteHealthCheck : IHealthCheck
     {
